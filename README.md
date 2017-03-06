@@ -16,7 +16,7 @@ text = new AutoGrowInput
 ```
 
 | Custom properties | Description |
-| - | - |
+| ----------------- | ----------- |
 | reflowSiblings | Boolean, will move siblings on the same parent it as it changes height |
 | resizeParent | Boolean, will resize the parent if things get too long |
 | padding | CSS shorthand property.  Add any padding you'd like. |

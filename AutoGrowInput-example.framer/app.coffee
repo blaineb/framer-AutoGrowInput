@@ -6,7 +6,7 @@ Screen.backgroundColor = "#F8F8F8"
 
 card = new Layer
 	width: 460
-	height: 700
+	height: 458
 	x: Align.center
 	y: pd
 	backgroundColor: "white"
@@ -31,17 +31,20 @@ text = new AutoGrowInput
 	width: card.width - 96
 	x: Align.center
 	y: logo.maxY + 48
+	style: "box-sizing" : "border-box"
 	
 	# Custom options
-	reflowSiblings: true
-	style: "box-sizing" : "border-box" 
-	resizeParent: true
+	fontFamily: "Helvetica"
 	fontSize: 24
+	fontWeight: 500
 	padding: "16px 16px 36px 16px"
 	parentBottomPadding: pd
 	placeHolder: "Say something"
+	reflowSiblings: true
+	resizeParent: true
+# 	value: "Silt is..."
 	
-# To show the reflowing stuff...
+# This bottom element is shown to demonstrate the reflowing of siblings.
 somethingElse = new Layer
 	backgroundColor: "#dedede"
 	borderRadius: 3
@@ -50,3 +53,4 @@ somethingElse = new Layer
 	width: text.width
 	x: Align.center
 	y: text.maxY + 24
+
